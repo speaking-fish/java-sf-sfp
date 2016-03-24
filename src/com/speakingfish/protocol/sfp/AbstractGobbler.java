@@ -23,7 +23,7 @@ public abstract class AbstractGobbler implements Runnable {
         _input = input;
     }
 
-    @Override public void run() {
+    public void run() {
         try {
             while (true) {
                 final byte[] frame = Helper.readFrame(_input);
